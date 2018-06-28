@@ -16,7 +16,6 @@ function eventListeners () {
     const make = document.getElementById('make').value;
     const year = document.getElementById('year').value;
     // Read the radio buttons
-
     let level = document.querySelector('input[name="level"]:checked') ? document.querySelector('input[name="level"]:checked').value : '';
 
     // Check the fields are selected
@@ -145,7 +144,6 @@ HTMLUI.prototype.showResult = function (price, insurance) {
   const result = document.getElementById('result');
   // create the div with the result
   const div = document. createElement('div');
-
   // Get make from the object and assign a readable name
   let make = insurance.make;
   switch(make) {
@@ -158,7 +156,6 @@ HTMLUI.prototype.showResult = function (price, insurance) {
     case '3':
         make = 'European';
   }
-
   // Insert the result
   div.innerHTML = `
     <p class="header">Summary</p>
@@ -167,16 +164,14 @@ HTMLUI.prototype.showResult = function (price, insurance) {
     <p>Level: ${insurance.level}</p>
     <p class="total">Total: $ ${price}</p>
   `;
-
   const spinner = document.querySelector('#loading img');
   spinner.style.display = 'block';
 
   setTimeout(function () {
     spinner.style.display = 'none';
+    // Insert div into html
     result.appendChild(div);
   }, 1500);
-  // Insert div into html
-
 };
 
 // Init app
