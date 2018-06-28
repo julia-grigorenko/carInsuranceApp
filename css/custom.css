@@ -6,10 +6,14 @@ body {
 }
 .btn.btn-raised.btn-primary {
     background-color: #00838F!important;
-    font-size: 16px;
+    font-size: 14px;
     width: 100%;
     padding: 15px;
     border-radius: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+
 }
 header {
     background-color:#26C6DA;
@@ -21,9 +25,6 @@ header {
 }
 header h1 {
   font-size: 22px;
-  margin: 0px auto;
-  width: 370px;
-
 }
 .error {
     background-color: #FBE9E7;
@@ -71,21 +72,6 @@ header h1 {
     text-transform: uppercase;
     font-weight: bold;
 }
-.form-group {
-  margin: 0px 30px 35px;
-}
-
-.form-group--level {
-  border: none;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-padding-before: 0em;
-}
-
-.row--level {
-  display: flex;
-}
-
-#request-quote {
-  display: flex;
+.level-group {
+    margin: 17px 0px 0px 17px;
 }
