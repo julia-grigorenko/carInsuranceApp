@@ -59,7 +59,8 @@ header h1 {
 #result div {
     border: 1px solid #26C6DA;
     text-align: center;
-    padding: 0  0 20px 0;
+    padding: 20px 0 20px 0;
+    border-radius: 15px;
 }
 #result div p {
     margin-bottom: 0;
